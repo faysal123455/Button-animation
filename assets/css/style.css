@@ -1,0 +1,111 @@
+body {
+  font-family: "open sans", sans-serif;
+  background: #2c3e50;
+  /* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'DynaPuff', cursive; */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  position: relative;
+  margin: 270px auto 0;
+  width: 590px;
+  height: 50px;
+  background: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgb(226, 206, 245);
+}
+
+/* all the text decoration */
+
+nav a {
+  font-size: 15px;
+  font-style: oblique;
+  text-transform: uppercase;
+  color: azure;
+  line-height: 50px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+nav .animation {
+  position: absolute;
+  /* bar circle position */
+
+  /* it will take whole bar */
+  /* height: 100%;
+  top: 0; */
+
+  /* it will take upper side  */
+  height: 5px;
+  top: 0;
+
+  /* it will show bar down */
+  /* height: 5px;
+  bottom: 0;
+   */
+
+  z-index: 0;
+  background: #d81d84;
+
+  border-radius: 8px;
+  /* speed of the moving bar */
+  transition: all 0.6s ease 0s;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+
+
+nav .start-home,
+a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+}
+a:nth-child(3) {
+  width: 100px;
+}
+
+
+nav .start-home,
+a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+}
+a:nth-child(4) {
+  width: 160px;
+}
+
+
+nav .start-home,
+a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 310px;
+}
+a:nth-child(5) {
+  width: 120px;
+}
+
+
+nav .start-home,
+a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 470px;
+}
